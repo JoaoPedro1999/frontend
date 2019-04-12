@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { SubmitButton, Container } from './styles'
-import './style.css';
 import Logo from '../../assets/logo.svg';
 import api from '../../services/api';
 
