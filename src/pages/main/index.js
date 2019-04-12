@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { SubmitButton, Container } from './styles'
 import './style.css';
 import Logo from '../../assets/logo.svg';
 import api from '../../services/api';
@@ -27,15 +28,15 @@ export default class main extends Component {
 
     render() {
         return (
-            <div id="main-container">
+            <Container>
                 <form onSubmit={this.handleSubmit}>
                     <img src={Logo} alt="" />
                     <input placeholder="Criar um box"
                         onChange={this.handleInputChange}
                         value={this.state.newBox} />
-                    <button type="submit">Criar</button>
+                    <SubmitButton type="submit">Criar</SubmitButton>
                 </form>
-            </div>
+            </Container>
         );
     }
 }
